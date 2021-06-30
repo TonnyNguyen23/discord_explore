@@ -1,0 +1,149 @@
+.content{
+    background-color: #3f4246;
+    padding:0 30px;
+    height: 100%;
+    width: auto;
+    overflow: scroll;
+    // position: relative;
+    .search{
+        height: 55%;
+        border-radius: 10px;
+        position: relative;
+        img{
+            width: 100%;
+            height: 100%;
+        }
+        .wrapper{
+            position: absolute;
+            left: 0px;
+            top: 0px;
+            // background-color: yellow;
+            width: 100%;
+            height: 100%;
+            .headerContent{
+                text-align: center;
+                margin: 6% 0;
+                // background-color: rgb(73, 73, 65);
+                height: 60%;
+                padding: 15px 0;
+                p{
+                    color: white;
+                    margin-top: -10px;
+                }
+                .find{
+                    background-color: white;
+                    height: 20%;
+                    margin: 0 25%;
+                    border-radius: 8px;
+                    .input{
+                        width: 90%;
+                        height: 100%;
+                        float: left;
+
+                    }
+                    .btn{
+                        @extend .input;
+                        width: 10%;
+                        i{
+                            font-size: 1.4em;
+                            padding-top: 10px;
+                            color: gray;
+                        }
+
+                    }
+                }
+            }
+        }
+
+    }
+    .card{
+        width: 100%;
+        height: 45%;
+        // background-color: gray;
+        .card-row{
+            width: 100%;
+            height: auto;
+            float: left;
+            // background-color: green;
+            .card-1{
+                width: 100%;
+                height: 100%;
+                background-color: #36393f;
+                margin-bottom: 3*0.4rem;
+                border-radius: 8px;
+                float: left;
+                .card-picture{
+                    width: 100%;
+                    height: 50%;
+                    // background-color: olive;
+
+                    .card-img{
+                        width: 100%;
+                        height: 90%;
+                        // background-color: orange;
+                        img{
+                            width: 100%;
+                            height: 100%;
+                            background-size: cover;
+                            border-top-left-radius: 8px;
+                            border-top-right-radius: 8px;
+                        }
+                    }
+                    .card-avt{
+                        width: 100%;
+                        height: 10%;
+                        // background-color: red;
+                        position: relative;
+                        img{
+                            width: 40px;
+                            height: 40px;
+                            position: absolute;
+                            background-size: cover;
+                            top: -25px;
+                            margin-left: 20px;
+                            border-radius: 8px;
+                            border: 4px solid #36393f;
+                        }
+                    }
+
+                }
+                .card-text{
+                    width: 100%;
+                    height: 50%;
+                    // background-color: olivedrab;
+                    .header-4{
+                        width: 100%;
+                        height: 15%;
+                        // background-color: white;
+                    }
+                    .paper{
+                        width: 100%;
+                        height: 65%;
+                    }
+                    .online{
+                        width: 100%;
+                        height: 20%;
+                        // background-color: #fff;
+                        .left{
+                            width: 50%;
+                            height: 100%;
+                            // background-color: yellow;
+                            float: left;
+                            padding-left: 20px
+                        }
+                        .right{
+                            @extend .left;
+                            // background-color: yellowgreen;
+                            padding-right: 15px;
+                        }
+                    }
+                }
+                &:hover {
+                    cursor: pointer;
+                    background-color: #202225;
+                }
+            }
+        }
+    }
+
+}

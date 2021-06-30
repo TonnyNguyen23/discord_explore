@@ -1,0 +1,13 @@
+
+// Font size 
+@for $fz from 0 to 12 {
+    .fz-#{$fz} {
+        font-size: $fz * 0.4rem;
+    }
+}
+
+
+.border-radius {
+    border-radius: 4px;
+}
+

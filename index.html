@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet"
+    href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+    crossorigin="anonymous" />
+    <title>Explore Discord</title>
+</head>
+<body>
+
+    <!-- Scroller -->
+  <div class="app">
+    <section class="scroller">
+      <ul class="scroller-list">
+        <li class="scroller-item active">
+          <div class="box">
+            <img src="./assets/img/discord.png" alt="">
+            <p class="scroller-item-name">Trang chủ</p>
+          </div>
+        </li>
+        <span class="seperate mb-2"><span></span></span>
+        <li class="scroller-item">
+          <div class="box">
+            <p class="scroller-item-name">Hello</p>
+            <span>H</span>
+          </div>
+        </li>
+        <li class="scroller-item active-group">
+          <div class="box">
+            <p class="scroller-item-name">Lofi Girl</p>
+            <img src="./assets/img/boy.png" alt="">
+          </div>
+        </li>
+
+        <li class="scroller-item">
+          <div class="box bg-green">
+            <p class="scroller-item-name">Thêm máy chủ</p>
+            <span><i class="fas fa-plus"></i></span>
+          </div>
+        </li>
+        <li class="scroller-item" id="explore">
+          <div class="box bg-green">
+            <p class="scroller-item-name">Khám phá</p>
+            <span><i class="far fa-compass"></i></span>
+          </div>
+        </li>
+
+        <span class="seperate mb-2"><span></span></span>
+        <li class="scroller-item">
+          <div class="box bg-green">
+            <p class="scroller-item-name">Tải ứng dụng</p>
+            <span><i class="fas fa-arrow-down"></i></span>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+
+    
+    <!-- Main -->
+    <!-- Explore -->
+      <div class="main grid grid-cols-12" id="main">   
+
+        <!-- Menu -->
+        <div class="menu col-span-2" >
+          <h2 class="heading">Khám phá</h2>
+  
+          <!-- Trang chủ -->
+          <div class="list-menu border-radius active" id="home">
+            <div class="icon">
+              <i class="far fa-compass"></i>
+            </div>
+            <div class="text">
+              <div class="trangchu">Trang chủ</div>
+            </div>
+          </div>
+  
+          <!-- Gaming -->
+          <div class="list-menu border-radius" id="gaming">
+            <div class="icon">
+              <i class="fas fa-gamepad"></i>
+            </div>
+            <div class="text">
+              <div class="trangchu">Gaming</div>
+            </div>
+          </div>
+  
+          <!-- Music -->
+          <div class="list-menu border-radius" id="music">
+            <div class="icon">
+              <i class="far fa-music"></i>
+            </div>
+            <div class="text">
+              <div class="trangchu">Music</div>
+            </div>
+          </div>
+  
+          <!-- Education -->
+          <div class="list-menu border-radius" id="education">
+            <div class="icon">
+              <i class="far fa-graduation-cap"></i>
+            </div>
+            <div class="text">
+              <div class="trangchu">Education</div>
+            </div>
+          </div>
+  
+          <!-- Science & Tech -->
+          <div class="list-menu border-radius" id="tech">
+            <div class="icon">
+              <i class="far fa-atom"></i>
+            </div>
+            <div class="text">
+              <div class="trangchu">Science & Tech</div>
+            </div>
+          </div>
+  
+          <!-- Entertainment -->
+          <div class="list-menu border-radius" id="entertainment">
+            <div class="icon">
+              <i class="far fa-tv"></i>
+            </div>
+            <div class="text">
+              <div class="trangchu">Entertainment</div>
+            </div>
+          </div>
+        </div>
+        <!-- End menu -->
+  
+        <!-- Content -->
+        <div class="content col-span-10">
+  
+          <!-- Tìm kiếm -->
+          <div class="search">
+            <img src="./assets/img/bgSearch.svg" alt="">
+  
+            <div class="wrapper">
+              <div class="headerContent">
+
+                <h3 class="title active">Tìm những cộng đồng dành cho bạn trên Discord</h3>
+                <h3 class="title">Tìm các cộng đồng Gaming trên Discord</h3>
+                <h3 class="title">Tìm các cộng đồng Music trên Discord</h3>
+                <h3 class="title">Tìm các cộng đồng Education trên Discord</h3>
+                <h3 class="title">Tìm các cộng đồng Science & Tech trên Discord</h3>
+                <h3 class="title">Tìm các cộng đồng Entertainment trên Discord</h3>
+
+                <p class="word active">Từ game cho đến âm nhạc và giáo dục, sẽ luôn có một nơi phù hợp với bạn trên Discord</p>
+                <p class="word"></p>
+                <p class="word"></p>
+                <p class="word"></p>
+                <p class="word"></p>
+                <p class="word"></p>
+
+                <div class="find">
+                  <div class="input">
+                    <input type="text" class="active" placeholder="Khám phá các cộng đồng">
+                    <input type="text" placeholder="Khám phá máy chủ Gaming">
+                    <input type="text" placeholder="Khám phá máy chủ Music">
+                    <input type="text" placeholder="Khám phá máy chủ Education">
+                    <input type="text" placeholder="Khám phá máy chủ Science & Tech">
+                    <input type="text" placeholder="Khám phá máy chủ Entertainment">
+                  </div>
+                  <div class="btn">
+                    <i class="far fa-search"></i>
+                  </div>
+                </div>
+  
+              </div>
+            </div>
+  
+          </div>
+          <!-- end tìm kiếm -->
+  
+          <!-- Cộng đồng -->
+          <div class="popular">Cộng đồng nổi bật</div>
+          <!-- end cộng đồng phổ biến -->
+  
+          <!-- card -->
+          <div class="card">
+            <div class="card-row grid grid-cols-12  gap-3">
+  
+              <!-- <div class="card-1 col-span-3"> -->
+                <!-- <div class="card-picture">
+                  <div class="card-img">
+                    <img src="./assets/img/img-1.jpg" alt="">
+                  </div>
+                  <div class="card-avt">
+                    <img src="./assets/img/avt-1.png" alt="">
+                  </div>
+                </div>
+  
+                <div class="card-text">
+                  <div class="header-4">
+                    Genshin Impact Official
+                  </div>
+                  <div class="paper">
+                    Welcome to Teyvat, Traveler! This is the place to discuss with others
+                      about your favorite game: Genshin Impact!
+                  </div>
+                  <div class="online">
+                    <div class="left">258.501 Trực tuyến</div>
+                    <div class="right">800.000 thành viên</div>
+                  </div> 
+                </div> -->
+              <!-- </div> --> 
+            </div>
+  
+            <!-- row 2 --> 
+            <div class="card-row-2 grid grid-cols-12  gap-3">
+              
+            </div>
+            
+          </div>
+          <!-- end card -->
+        </div>
+        <!-- End content -->
+  
+      <!-- End explore -->
+      </div>
+      <!-- End main -->
+    
+
+    <script src="./main.js"></script>
+    
+</body>
+</html>
